@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 .iconsearch{
+    
     height: 50px;
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    z-index: 1;
 }
 #Rech{
     overflow: hidden;
@@ -40,4 +41,31 @@
     display: flex;
     border-radius: 20px;
     width: 350px;
+}
+.actualicon{ 
+    border-color: rgb(187, 66, 66);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.actualicon::after{
+    
+    content: "";
+    height: 15px;
+    width: 1px;
+    border: 1px solid rgb(99, 96, 96);
+    transform: translate(-1px,0px) rotate(136deg);
+}
+.actualicon::before{
+    content: "";
+    height: 15px;
+    width: 1px;
+    border: 1px solid rgb(99, 96, 96);
+    transform:  rotate(-136deg);
+}
+.estvisible{
+    display: block;
 }

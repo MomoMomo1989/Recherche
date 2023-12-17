@@ -540,36 +540,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.z-10 {
-  z-index: 10;
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[50px\] {
   height: 50px;
 }
 
-.w-\[300px\] {
-  width: 300px;
+.w-\[260px\] {
+  width: 260px;
 }
 
 .w-\[50px\] {
   width: 50px;
-}
-
-.w-\[00px\] {
-  width: 00px;
-}
-
-.w-\[280px\] {
-  width: 280px;
-}
-
-.w-\[20px\] {
-  width: 20px;
-}
-
-.w-\[260px\] {
-  width: 260px;
 }
 
 .rounded-\[100\%\] {
@@ -586,13 +574,8 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .outline-none {
@@ -607,6 +590,7 @@ video {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 #Rech{
@@ -639,4 +623,34 @@ video {
   display: flex;
   border-radius: 20px;
   width: 350px;
+}
+
+.actualicon{
+  border-color: rgb(187, 66, 66);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.actualicon::after{
+  content: "";
+  height: 15px;
+  width: 1px;
+  border: 1px solid rgb(99, 96, 96);
+  transform: translate(-1px,0px) rotate(136deg);
+}
+
+.actualicon::before{
+  content: "";
+  height: 15px;
+  width: 1px;
+  border: 1px solid rgb(99, 96, 96);
+  transform:  rotate(-136deg);
+}
+
+.estvisible{
+  display: block;
 }
